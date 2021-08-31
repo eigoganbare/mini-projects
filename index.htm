@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://www.w3schools.com/howto/tryhow_website_band.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  
+<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script></head><body data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+
+  <a href="./index.htm" class="w3-button w3-bar-item">Home</a>
+
+   <a href="./Annette-Lee-UX-Design-Resume.pdf" class="w3-button w3-bar-item">Resume</a>
+
+   <a href="https://altto.net/team-teaching-in-english-working-for-the-students-by-anette-lee/" class="w3-button w3-bar-item">Publication</a>
+
+  <a href="mailto:AnnetteLee.2018@gmail.com" class="w3-button w3-bar-item">Contact</a>
+
+  
+
+  <div class="w3-dropdown-hover w3-hide-small">
+
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+
+        <a href="./01-LetterRecommendation-OsakaSeiryo" class="w3-bar-item w3-button">Reference Letter: Osaka Seiryo JHS & HS</a>
+
+        <a href="./02-LetterRecommendation-ALTtrainingOnline" class="w3-bar-item w3-button">Reference Letter: ALT Training Online</a>
+
+      </div>
+
+  
+
+</nav>
+
+ 
+
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="./wantToBeUXDesigner/eigoganbare-1.jpg" style="width: 100%; display: none;">
+  <img class="mySlides" src="./wantToBeUXDesigner/eigoganbare-2.jpg" style="width: 100%; display: block;">
+  <img class="mySlides" src="./wantToBeUXDesigner/eigoganbare-3.jpg" style="width: 100%; display: none;">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:700px">
+  <p></p>
+  <h2 class="w3-wide">Annette's Portfolio</h2>
+  <p class="w3-opacity"><i>Seeking a professional career to be a UX Designer</i></p>
+  <p class="w3-justify">I have a passion for technology, especially if it's being used as a tool to help people. 
+    My creativity and empathy for equity led me to design innovative solutions with visual designs. As a native English teacher in Japan, I was faced with students' mistaken belief that English is too difficult. 
+    I worked with Japanese teachers of English who followed a rigid curriculum with little flexibility. There was little emphasis on English communication. 
+    A foreign English teacher fills in this gap, but lacks teaching skills 
+    and strategies to successfully introduce Japanese learners to cultural diversity. I decided to create solutions by developing a website called "Eigo Ganbare" to make learning English easier, practical, and engaging! Now that I'm in the United States, 
+    my goal is to be a UX Designer with an interest in designing educational learning apps and/or be part of an inclusive 
+    accessibility design team to help people with learning difficulties. I'm also open to other opportunities, like specializing in UX visual/interaction design for desktop and mobile apps.</p>
+</section>
+<p></p>
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p><a href ="https://www.coursera.org/account/accomplishments/specialization/certificate/CRCN9PS2EX3V">
+      Google UX Design Professional Certificate</a></p>
+    <a href ="./case-study-1.pdf"><img src="./wantToBeUXDesigner/cs-1.png" alt="Random Name" style="width:100%"></a>
+    <p>Case Study 1</p>
+  </article>
+  <article class="w3-third">
+    <p><br></p>
+    <a href ="./case-study-2.pdf"><img src="./wantToBeUXDesigner/cs-2.png" alt="Random Name" style="width:100%"></a>
+    <p>Case Study 2 + <a href ="https://www.figma.com/proto/ZD2ilkOcveWQzk67YpGfB8/Eigo-Ganbare-True-or-False?node-id=1%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3">BONUS: The マル and バツ game</a></p>
+  </article>
+  <article class="w3-third">
+    <p><br></p>
+    <a href ="./case-study-3.pdf"><img src="./wantToBeUXDesigner/cs-3.png" alt="Random Name" style="width:100%"></a>
+    <p>Case Study 3 + <a href ="https://www.figma.com/proto/mJKiJWjKLbfmTfjRwhONOf/Eigo-Ganbare-Quick-Match-Sushi?node-id=210%3A5&scaling=scale-down&page-id=210%3A2&starting-point-node-id=210%3A5">BONUS: The Hunt</a></p>
+       </article>
+  
+ 
+  <article class="w3-third">
+    <p> <a href ="https://www.freecodecamp.org/certification/alee50/responsive-web-design">Responsive Web Design Certificate</a>  </p>
+    <a href ="https://eigoganbare.github.io/freecodecamp-personalportfoliowebpage/"><img src="./wantToBeUXDesigner/EG-2.jpg" alt="Random Name" style="width:100%"></a>
+    <p>freeCodeCamp - Projects</p>
+  </article>
+  <article class="w3-third">
+    <p><br></p>
+    <a href ="https://eigoganbare.com"><img src="./wantToBeUXDesigner/EG-3.jpg" alt="Random Name" style="width:100%"></a>
+    <p>My Eigo Ganbare website in Action!</p>
+  </article>
+  
+   <article class="w3-third">
+    <p><br></p>
+    <img src="./wantToBeUXDesigner/ar-sample.png" alt="Random Name" style="width:100%">
+     <p style="color:blue"><i>"AR help users make real-world connections."</i><p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+   <a href="https://www.linkedin.com/in/annettelee2020/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <p class="w3-medium">
+   
+  Created by <a href="https://www.linkedin.com/in/annettelee2020/" target="_blank">Annette Lee</a> © 2021  
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+
+
+</body></html>
